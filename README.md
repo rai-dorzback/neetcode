@@ -14,7 +14,7 @@ This repo is filled with my solutions to the Neetcode 150. I am doing this to ge
 I solve the problems in JavaScript and sometimes Python as well.
 
 ## Optimizations
-
+As I do each solution, I usually start with a brute force version or just the first solution I think of. After, I try to optimize it to be more efficient.
 
 ## Lessons Learned
 - Contains Duplicate

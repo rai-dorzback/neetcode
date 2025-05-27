@@ -67,5 +67,3 @@ class Solution {
         return true
     };
 };
-
-// OTHER SOLUTION: Hash Table (Using Array)
