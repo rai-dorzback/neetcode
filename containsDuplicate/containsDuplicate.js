@@ -25,7 +25,7 @@ class Solution {
 console.log(hasDuplicate([1, 2, 2, 3, 3]), true); // true - duplicates
 console.log(hasDuplicate([2, 3, 4]), false); // false - no duplicates
 
-// IDEAL SOLUTION
+// IDEAL SOLUTION - hash set length
 class Solution {
     /**
      * @param {number[]} nums
@@ -35,7 +35,7 @@ class Solution {
     hasDuplicate = nums => new Set(nums).size < nums.length;
 };
 
-// IDEAL SOLUTION 2 - hash set
+// IDEAL SOLUTION 2 - hash set 
 // Time Complexity: O(n)
 // Space Complexity: O(n)
 class Solution {
@@ -45,15 +45,15 @@ class Solution {
      */
     hasDuplicate(nums) {
         // Create a set
-        const seenNums = new Set();
+        const hashSet = new Set();
         // loop thru nums
         for(const num of nums) {
             // if num is in the set, return true
-            if(seenNums.has(num)) {
+            if(hashSet.has(num)) {
                 return true;
             };
             // add num to set 
-            seenNums.add(num); 
+            hashSet.add(num); 
         };
         return false;
     };

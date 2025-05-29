@@ -19,6 +19,7 @@ I solve the problems in JavaScript and sometimes Python as well.
 ## Lessons Learned
 - Contains Duplicate
     - Sometimes when solving these problems you realize how simple an answer can be. I sometimes overcomplicate a solution and think too hard about it when there is really a simpler answer. This is how I felt when I realized I could create a set out of the array of nums to get the unique values and just compare the set size to the array length to figure out if there were duplicates! I'll be remembering this for next time.
+    - Data Structure Used: Hash Set
 
 ## Resources
 - [JavaScript DS & A](https://github.com/trekhleb/javascript-algorithms)
