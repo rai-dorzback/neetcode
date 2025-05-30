@@ -7,10 +7,9 @@ class Solution {
      * @return {boolean}
      */
     hasDuplicate(nums) {
-        // sort nums to be ascending
         // store last number that was looped thru
         let lastNum = 0;
-        // loop thru nums
+        // loop thru nums (ascending)
         for(const num of nums.sort((a, b) => a - b)) {
             // if current num == last number
             if(num === lastNum) {
