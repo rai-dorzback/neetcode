@@ -20,6 +20,8 @@ As I do each solution, I usually start with a brute force version or just the fi
 - Contains Duplicate
     - Sometimes when solving these problems you realize how simple an answer can be. I sometimes overcomplicate a solution and think too hard about it when there is really a simpler answer. This is how I felt when I realized I could create a set out of the array of nums to get the unique values and just compare the set size to the array length to figure out if there were duplicates! I'll be remembering this for next time.
     - Data Structure Used: Hash Set
+- Top K Frequent Elements
+  - I first did a brute force solution and when I looked at the "hint" it said my solution was "naive" 😭. The most solution they had was a bucket sort. Tomorrow I am going to work on learning bucket sort and min-heap since these are new for me!
 
 ## Resources
 - [JavaScript DS & A](https://github.com/trekhleb/javascript-algorithms)
