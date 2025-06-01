@@ -22,6 +22,7 @@ As I do each solution, I usually start with a brute force version or just the fi
     - Data Structure Used: Hash Set
 - Top K Frequent Elements
   - I first did a brute force solution and when I looked at the "hint" it said my solution was "naive" 😭. The most solution they had was a bucket sort. Tomorrow I am going to work on learning bucket sort and min-heap since these are new for me!
+  - This was my first exposure to using the bucket sort algorithm
 
 ## Resources
 - [JavaScript DS & A](https://github.com/trekhleb/javascript-algorithms)
