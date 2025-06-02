@@ -23,4 +23,48 @@ class Solution {
         };
         return result;
     };
-}
+};
+
+// SOLUTION 2: Bucket Sort
+// O(N) space/time complexity
+class Solution {
+    /**
+     * @param {number[]} nums
+     * @param {number} k
+     * @return {number[]}
+     */
+    topKFrequent(nums, k) {
+        // create hashmap
+        let counts = {};
+        // create freq bucket
+        let freq = Array.from({length: nums.length + 1}, () => []);
+
+        // loop thru nums to fill out hashmap
+        for(const num of nums) {
+            counts[num] ? counts[num]++ : counts[num] = 1;
+        };
+
+        // loop through hashmap to add count to right bucket
+        for(const n in counts) {
+            // the count of the current number
+            const count = counts[n];
+            // add the number to the subarray at the index of the count
+            freq[count].push(n);
+        };
+
+        // make result arr
+        const res = [];
+        // loop backwards through frequency
+        for(let i = freq.length - 1; i > 0; i--) {
+                // for each number in freq subarray
+                for(const n of freq[i]) {
+                    // add most frequent element to results array
+                    res.push(n);
+                    // if result length === k, return result
+                    if(res.length === k) {
+                        return res;
+                    };
+                };
+        };
+    };
+};
