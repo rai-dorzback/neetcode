@@ -23,6 +23,7 @@ As I do each solution, I usually start with a brute force version or just the fi
 - Top K Frequent Elements
   - I first did a brute force solution and when I looked at the "hint" it said my solution was "naive" 😭. The most solution they had was a bucket sort. Tomorrow I am going to work on learning bucket sort and min-heap since these are new for me!
   - This was my first exposure to using the bucket sort algorithm
+- In doing many of these problems, I started brute forcing it but ultimately looked at the solution and saw one very different from my own. Then, I went through the code line by line and the video to figure out how they solved the problem. Then, I solved it with them and tried to solve it on my own. I think the best way to do this is to come back to the same problems a few days later and try to solve them without looking at the solutions. 
 
 ## Resources
 - [JavaScript DS & A](https://github.com/trekhleb/javascript-algorithms)
