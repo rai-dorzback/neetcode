@@ -1,4 +1,4 @@
-// SOLUTION 1: Brute force
+// SOLUTION 1: Brute force - sorting
 // Time Complexity: O(n log n)
 // Space Complexity: O(n)
 class Solution {
