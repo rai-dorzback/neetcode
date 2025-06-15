@@ -1,3 +1,5 @@
+# Prefix and Suffix
+# Time: O(n)
 class Solution:
     def productExceptSelf(self, nums: List[int]) -> List[int]:
         # result output array that's the length of nums. give each position a default of 1
