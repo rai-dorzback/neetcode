@@ -67,3 +67,72 @@ class Solution {
         return true
     };
 };
+
+// Came back later to try problem again after having space from it
+// Time: O(n)
+// Space: O(n)
+class Solution {
+    /**
+     * @param {string} s
+     * @param {string} t
+     * @return {boolean}
+     */
+    isAnagram(s, t) {
+        // if strings are diff lengths, they're not anagrams
+        if(s.length !== t.length) {
+            return false;
+        };
+        let countS = {}, countT = {};
+        // make hashmap of chars in string s
+        for(const char of s) {
+            countS[char] ? countS[char]++ : countS[char] = 1;
+        };
+
+        // make hashmap of chars in string t
+        for(const char of t) {
+            countT[char] ? countT[char]++ : countT[char] = 1;
+        };
+
+        let sameLetters = true;
+        // compare each character and see if frequency is same
+        for(const char in countS) {
+            if(countS[char] !== countT[char]) {
+                sameLetters = false;
+                break;
+            };
+        };
+
+        return sameLetters;
+    };
+};
+
+// Optimized version of one we came back to
+class Solution {
+    /**
+     * @param {string} s
+     * @param {string} t
+     * @return {boolean}
+     */
+    isAnagram(s, t) {
+        // if strings are diff lengths, they're not anagrams
+        if(s.length !== t.length) {
+            return false;
+        };
+        let sChar = {}, tChar = {};
+
+        // make hashmap of chars in string s
+        for(let i = 0; i < s.length; i++) {
+            sChar[s[i]] ? sChar[s[i]]++ : sChar[s[i]] = 1;
+            tChar[t[i]] ? tChar[t[i]]++ : tChar[t[i]] = 1;
+        };
+
+        // compare each character and see if frequency is same
+        for(const char in sChar) {
+            if(sChar[char] !== tChar[char]) {
+                return false;
+            };
+        };
+
+        return true;
+    };
+};
