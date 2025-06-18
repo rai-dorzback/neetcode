@@ -13,3 +13,11 @@ class Solution:
                 return True
             hashset.add(num)
         return False
+
+# Came back to this problem later to solve it again
+class Solution:
+    def hasDuplicate(self, nums: List[int]) -> bool:
+        unique = set(nums);
+        if len(unique) < len(nums):
+            return True
+        return False
