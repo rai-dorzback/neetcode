@@ -57,3 +57,20 @@ class Solution {
         return false;
     };
 };
+
+// Went back to do this problem after it had been a week or two since reviewing it
+class Solution {
+    /**
+     * @param {number[]} nums
+     * @return {boolean}
+     */
+    hasDuplicate(nums) {
+        // make a set of nums to get unique values
+        const unique = new Set(nums);
+        // if set size is different from nums length, there is a duplicate
+        if(unique.size !== nums.length) {
+            return true;
+        };
+        return false;
+    };
+};
